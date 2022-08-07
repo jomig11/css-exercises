@@ -43,8 +43,8 @@ body {
 
   /* Custom Code*/
   padding: 16px;
-  border: 2px solid red;
-
+  flex-shrink:0;
+  justify-content: flex-start;
     
 }
 
@@ -53,12 +53,11 @@ body {
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
   /* Custom Code*/
-  border: 2px solid red;
   display: flex;
-  width:250px;
+  width:350px;
   height:250px;
   justify-content: space-around;
-
+  margin-bottom:10px;
 
 }
 
@@ -73,13 +72,17 @@ body {
 
 ul {
   list-style: none;
-
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  justify-content: flex-start;
+    
+  
   
 }
 
 .cards {
   display: flex;
-  border: 2px solid red;
   padding:32px;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -87,12 +90,11 @@ ul {
   
 }
 
-li,a {
+a{
   color: white;
   text-decoration: none;
-  size: 124px;
+  font-size: 24px;
   
-  border: 2px solid red;
   
 
 }
